@@ -3,7 +3,7 @@ import pickle
 
 app =Flask(__name__ , template_folder="templates")
 
-model = pickle.load(open("car-price-prediction-model.pkl", 'rb'))
+model = pickle.load(open("/model/car-price-prediction-model.pkl", 'rb'))
 
 @app.route("/home" , methods=["GET" , "POST"])
 def home():
